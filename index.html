@@ -1,16 +1,31 @@
 <html>
 
-<head>
+<ti>
 
   <!-- this script is to help evaluate your deployed project -->
   <script src='./dependencies/evaluation.js'></script>
   <!-- this is the testing function for your logic -->
   <script src='./dependencies/testing.js'></script>
-
+  <link rel="stylesheet" href="style.css">
+  <title>calculator</title>
 </head>
 
 <body>
+<form>
+  value 1:<input type="text">
+  value 2:<input type="text">
+  <select>
+    <option value="add">Add </option>
+    <option value="min">minus </option>
+    <option value="div">div </option>
+    <option value="mul">mul </option>
+  </select>
+  <button type="button">Calculate</button>
 
+</form>
+<script type=“text/javascript” src=“scripts/handler.js”></script>
+    <script type=“text/javascript” src=“scripts/listener.js”></script>
+    <script type=“text/javascript” src=“scripts/logic.js”></script>
 </body>
 
 </html>
