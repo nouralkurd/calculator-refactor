@@ -1,13 +1,22 @@
-function calculateHandler(event) {
-  // read & process user input from event
+function calculateHandler(a, b, op) {
+  try {
+    // read & process user input from event
+    a = parseInt(a);
+    b = parseInt(b);
+    op = op.toString();
+    // pass user input through core logic
 
-  // pass user input through core logic
-  const result = doMath(op, x, y); // leave this line!
-  
-  // render output to DOM for user
-
-  // log user action for developers
-
-  // return true for the browser
-  return true;
+    var calculate;
+    calculate = doMath(op, a, b);
+    // render output to DOM for user
+    document.querySelector("#results").innerText =
+      a + " " + op + " " + b + " " + " = " + calculate;
+    // log user action for developers
+    console.log(calculate);
+    // return true for the browser
+    return true;
+  }
+  catch (err) {
+    document.getElementById("results").innerHTML = err.message;
+  }
 }
