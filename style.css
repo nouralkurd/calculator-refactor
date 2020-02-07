@@ -1,0 +1,43 @@
+body {
+    position: relative;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin: 0px auto;
+    padding: 20px 20px 100px 20px;
+    align-items: center;
+  }
+  
+  .container {
+    background-color: wheat;
+    margin: 10px;
+    padding-top: 10px;
+    width: auto;
+    height: 250px;
+  }
+  .col {
+    display: block;
+    width: 100%;
+    color: blue;
+    margin: 10px;
+  }
+  .btn-style {
+    width: 100px;
+    height: 50px;
+    margin: 20px;
+    text-align: center;
+    float: right;
+  }
+  .header {
+    color: crimson;
+    font-size: medium;
+    font-weight: 100;
+    text-align: center;
+    margin: 10px;
+  }
+  .results {
+    text-align: center;
+    background-color: cyan;
+    margin: 10px;
+    font-size: medium;
+  }
